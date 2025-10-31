@@ -49,6 +49,11 @@
             font-weight: 700;
             border-left-color: #4338ca; /* indigo-700 */
         }
+        .sidebar-link svg {
+            width: 1.25rem;
+            height: 1.25rem;
+            flex-shrink: 0;
+        }
         .highlight {
             color: #86198f; /* fuchsia-800 */
             font-weight: 700;
@@ -92,14 +97,38 @@
             <nav class="bg-white p-4 rounded-lg shadow-sm border border-slate-200">
                 <h2 class="text-xl font-bold text-slate-800 mb-4 px-3">목차</h2>
                 <ul class="space-y-1">
-                    <li><a href="#definition" class="sidebar-link"><span>📖</span> 정의</a></li>
-                    <li><a href="#frequency" class="sidebar-link"><span>📊</span> 발생빈도</a></li>
-                    <li><a href="#cause" class="sidebar-link"><span>🦠</span> 원인 및 병인</a></li>
-                    <li><a href="#stages" class="sidebar-link"><span>🔢</span> 매독의 단계</a></li>
-                    <li><a href="#symptoms" class="sidebar-link"><span>🩺</span> 임상 양상</a></li>
-                    <li><a href="#diagnosis" class="sidebar-link"><span>🔬</span> 진단 평가</a></li>
-                    <li><a href="#intervention" class="sidebar-link"><span>💪</span> 물리치료 및 중재</a></li>
-                    <li><a href="#medical-treatment" class="sidebar-link"><span>💊</span> 의학적 처치</a></li>
+                    <li><a href="#definition" class="sidebar-link active">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18c-2.305 0-4.408.867-6 2.292m0-14.25v14.25" /></svg>
+                        <span>정의</span>
+                    </a></li>
+                    <li><a href="#frequency" class="sidebar-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" /></svg>
+                        <span>발생빈도</span>
+                    </a></li>
+                    <li><a href="#cause" class="sidebar-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg>
+                        <span>원인 및 병인</span>
+                    </a></li>
+                    <li><a href="#stages" class="sidebar-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" /></svg>
+                        <span>매독의 단계</span>
+                    </a></li>
+                    <li><a href="#symptoms" class="sidebar-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 0 0-1.883 2.542l.857 6a2.25 2.25 0 0 0 2.227 1.932H19.05a2.25 2.25 0 0 0 2.227-1.932l.857-6a2.25 2.25 0 0 0-1.883-2.542m-16.5 0V6A2.25 2.25 0 0 1 6 3.75h12A2.25 2.25 0 0 1 20.25 6v3.776" /></svg>
+                        <span>임상 양상</span>
+                    </a></li>
+                    <li><a href="#diagnosis" class="sidebar-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75 16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0 0 20.25 18V5.75A2.25 2.25 0 0 0 18 3.5H6A2.25 2.25 0 0 0 3.75 5.75v12.5A2.25 2.25 0 0 0 6 20.25Z" /></svg>
+                        <span>진단 평가</span>
+                    </a></li>
+                    <li><a href="#intervention" class="sidebar-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+                        <span>물리치료 및 중재</span>
+                    </a></li>
+                    <li><a href="#medical-treatment" class="sidebar-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" /></svg>
+                        <span>의학적 처치</span>
+                    </a></li>
                 </ul>
             </nav>
         </aside>
@@ -120,7 +149,57 @@
                 </div>
             </section>
             
-            <!-- Other sections remain largely the same in structure, this is a summary of changes -->
+            <!-- 발생빈도 Section (NEW) -->
+            <section id="frequency" class="section-card">
+                <h2 class="text-3xl font-bold mb-5 text-indigo-700">2. 발생빈도 (Frequency)</h2>
+                <ul class="list-disc list-inside space-y-3 text-lg leading-relaxed">
+                    <li>페니실린과 같은 항생제가 발견되기 전에는 흔한 질병이었으나, 현재는 항생제 치료의 발달로 <strong class="highlight">매우 드물게</strong> 발생합니다.</li>
+                    <li>치료받지 않은 매독 환자의 약 <strong class="highlight">2~5%</strong>에서 발생할 수 있습니다.</li>
+                    <li>주로 남성에게 더 흔하게 나타나며, 여성보다 발병률이 높습니다.</li>
+                    <li>초기 매독 감염 후 <strong class="highlight">10년에서 30년</strong>이 지난 후에 증상이 나타나는 것이 일반적입니다.</li>
+                </ul>
+            </section>
+
+            <!-- 원인 및 병인 Section (NEW) -->
+            <section id="cause" class="section-card">
+                <h2 class="text-3xl font-bold mb-5 text-indigo-700">3. 원인 및 병인 (Cause & Pathogenesis)</h2>
+                <p class="mb-4 text-lg leading-relaxed">
+                    척수매독의 직접적인 원인은 <strong class="highlight">트레포네마 팔리듐(Treponema pallidum)</strong>이라는 박테리아(매독균) 감염입니다.
+                </p>
+                <div class="bg-slate-50 border-l-4 border-slate-500 p-5 rounded-r-lg mt-6">
+                    <h4 class="font-bold mb-2 text-slate-900 text-lg">병리 기전</h4>
+                    <ul class="list-disc list-inside space-y-2 text-slate-800">
+                        <li>매독균이 중추신경계(CNS)를 침범하여 발생합니다.</li>
+                        <li>주요 손상 부위는 척수의 <strong class="highlight">뒤섬유기둥(dorsal column)</strong>과 <strong class="highlight">뒤신경뿌리(dorsal root)</strong>입니다.</li>
+                        <li>이 부위는 <strong class="highlight">고유수용성 감각(proprioception)</strong>과 진동 감각을 전달하는 통로입니다.</li>
+                        <li>신경섬유의 말이집탈락과 축삭 손상이 진행되면서 감각 정보 전달에 심각한 장애가 발생하여 <strong class="highlight">감각실조(sensory ataxia)</strong>가 나타납니다.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 매독의 단계 Section (NEW) -->
+            <section id="stages" class="section-card">
+                <h2 class="text-3xl font-bold mb-5 text-indigo-700">4. 매독의 단계 (Stages of Syphilis)</h2>
+                <p class="mb-6 text-lg">척수매독은 3기 매독에 속합니다. 매독의 진행 단계는 다음과 같습니다.</p>
+                <div class="space-y-4">
+                    <div class="p-4 border border-slate-200 rounded-lg">
+                        <h4 class="font-bold text-lg">1기 매독 (Primary)</h4>
+                        <p>감염 후 3주 정도에 통증 없는 피부 궤양(<strong class="highlight">경성하감</strong>)이 나타났다가 자연 소실됩니다.</p>
+                    </div>
+                    <div class="p-4 border border-slate-200 rounded-lg">
+                        <h4 class="font-bold text-lg">2기 매독 (Secondary)</h4>
+                        <p>감염 후 수 주에서 수 개월 뒤 <strong class="highlight">피부 발진</strong>, 발열, 림프절 부종 등 전신 증상이 나타납니다.</p>
+                    </div>
+                    <div class="p-4 border border-slate-200 rounded-lg">
+                        <h4 class="font-bold text-lg">잠복 매독 (Latent)</h4>
+                        <p>증상이 없지만 매독균은 체내에 남아있는 시기입니다. 이 시기에도 전염성이 있을 수 있습니다.</p>
+                    </div>
+                    <div class="p-4 border border-red-200 bg-red-50 rounded-lg">
+                        <h4 class="font-bold text-lg text-red-800">3기 매독 (Tertiary)</h4>
+                        <p class="text-red-700">감염 후 수년에서 수십 년 뒤 발생하며, <strong class="highlight">신경매독(척수매독, 진행마비)</strong>, 심혈관매독, 고무종(Gumma) 등 심각한 내부 장기 손상을 일으킵니다.</p>
+                    </div>
+                </div>
+            </section>
 
             <!-- 임상 양상 Section (ENHANCED) -->
             <section id="symptoms" class="section-card">
@@ -192,9 +271,9 @@
                     <h3 class="text-2xl font-semibold mb-3 text-teal-900">핵심 중재: 프렌켈 운동 (Frenkel's Exercise)</h3>
                     <p class="mb-3">시각적 피드백을 적극적으로 활용하여 느리고, 정확한 동작을 반복함으로써 손상된 고유수용성 감각을 보상하고 재훈련하는 대표적인 <strong class="highlight">협응 능력 증진 운동</strong>입니다.</p>
                     <div class="flex flex-wrap gap-4 text-center">
-                        <div class="flex-1 p-3 bg-teal-100 rounded-md"><strong class="text-teal-900">주의집중</strong></div>
-                        <div class="flex-1 p-3 bg-teal-100 rounded-md"><strong class="text-teal-900">정확성</strong></div>
-                        <div class="flex-1 p-3 bg-teal-100 rounded-md"><strong class="text-teal-900">반복</strong></div>
+                        <div class="flex-1 min-w-[100px] p-3 bg-teal-100 rounded-md"><strong class="text-teal-900">주의집중</strong></div>
+                        <div class="flex-1 min-w-[100px] p-3 bg-teal-100 rounded-md"><strong class="text-teal-900">정확성</strong></div>
+                        <div class="flex-1 min-w-[100px] p-3 bg-teal-100 rounded-md"><strong class="text-teal-900">반복</strong></div>
                     </div>
                 </div>
 
@@ -202,18 +281,18 @@
                     <div>
                         <h4 class="text-xl font-semibold mb-2 text-teal-900">기타 치료적 접근</h4>
                         <ul class="list-disc list-inside space-y-2">
-                           <li><strong>균형 및 근력 훈련:</strong> 불안정한 지면 훈련, 체중 이동 훈련</li>
-                           <li><strong>수중물리치료:</strong> 물의 부력을 이용해 관절 부담 없이 운동</li>
-                           <li><strong>보조도구 적용:</strong> <strong class="highlight">샤르코 관절</strong> 변형 시 맞춤형 신발 및 보조기(AFO) 착용</li>
-                           <li><strong>감각 훈련:</strong> 다양한 질감과 온도를 이용한 감각 자극</li>
+                            <li><strong>균형 및 근력 훈련:</strong> 불안정한 지면 훈련, 체중 이동 훈련</li>
+                            <li><strong>수중물리치료:</strong> 물의 부력을 이용해 관절 부담 없이 운동</li>
+                            <li><strong>보조도구 적용:</strong> <strong class="highlight">샤르코 관절</strong> 변형 시 맞춤형 신발 및 보조기(AFO) 착용</li>
+                            <li><strong>감각 훈련:</strong> 다양한 질감과 온도를 이용한 감각 자극</li>
                         </ul>
                     </div>
                     <div>
                        <h4 class="text-xl font-semibold mb-2 text-teal-900">일상생활활동(ADL) 훈련</h4>
                         <ul class="list-disc list-inside space-y-2">
-                           <li><strong>실조 전 단계:</strong> 감각 적응 훈련 및 안전 교육</li>
-                           <li><strong>실조 단계:</strong> 보행 보조기(지팡이, 워커) 사용법 훈련</li>
-                           <li><strong>마비 단계:</strong> 구축 방지를 위한 올바른 자세 유지 및 침상 운동</li>
+                            <li><strong>실조 전 단계:</strong> 감각 적응 훈련 및 안전 교육</li>
+                            <li><strong>실조 단계:</strong> 보행 보조기(지팡이, 워커) 사용법 훈련</li>
+                            <li><strong>마비 단계:</strong> 구축 방지를 위한 올바른 자세 유지 및 침상 운동</li>
                         </ul>
                     </div>
                 </div>
@@ -222,10 +301,10 @@
             <section id="medical-treatment" class="section-card">
                 <h2 class="text-3xl font-bold mb-5 text-indigo-700">8. 의학적 처치 및 관리 (Medical Treatment)</h2>
                  <ul class="list-disc list-inside space-y-3 text-lg">
-                    <li><strong>치료 목표:</strong> 매독균 감염을 치료하고 더 이상의 신경 손상을 막는 것입니다. <strong class="highlight">이미 진행된 손상을 되돌릴 수는 없습니다.</strong></li>
-                    <li><strong>주요 치료법:</strong> 약 2주간의 <strong class="highlight">페니실린 G(penicillin G)</strong> 정맥 주사와 같은 고용량 항생제 치료를 권장합니다.</li>
-                    <li><strong>팀 접근:</strong> 신경과, 감염내과, 물리치료사, 작업치료사 등 다양한 전문가의 협력이 중요합니다.</li>
-                </ul>
+                     <li><strong>치료 목표:</strong> 매독균 감염을 치료하고 더 이상의 신경 손상을 막는 것입니다. <strong class="highlight">이미 진행된 손상을 되돌릴 수는 없습니다.</strong></li>
+                     <li><strong>주요 치료법:</strong> 약 2주간의 <strong class="highlight">페니실린 G(penicillin G)</strong> 정맥 주사와 같은 고용량 항생제 치료를 권장합니다.</li>
+                     <li><strong>팀 접근:</strong> 신경과, 감염내과, 물리치료사, 작업치료사 등 다양한 전문가의 협력이 중요합니다.</li>
+                 </ul>
             </section>
         </main>
     </div>
@@ -233,7 +312,7 @@
     <!-- Footer -->
     <footer class="bg-slate-800 text-white mt-8">
         <div class="container mx-auto px-6 py-4 text-center text-sm text-gray-400">
-            <!-- Footer content removed as requested -->
+            <!-- Footer content is intentionally left blank as per request in original file -->
         </div>
     </footer>
 
@@ -252,12 +331,26 @@
                     });
                 }
             });
-        }, { threshold: 0.4 });
+        }, { 
+            rootMargin: '-50% 0px -50% 0px', // Triggers when section is in the middle of the viewport
+            threshold: 0 
+        });
 
         sections.forEach(section => {
             observer.observe(section);
         });
+
+        // Add smooth scroll to sidebar links
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
     </script>
 </body>
 </html>
-
